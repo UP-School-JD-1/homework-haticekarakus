@@ -9,6 +9,14 @@ public class Point {
 		this.y=y;
 	}
 	
+	Point(int x){
+		this(x,0);
+	}
+
+	Point(){
+		this(0,0);
+	}
+	
 	public int getX() {
 		return x;
 	}
@@ -52,5 +60,10 @@ public class Point {
 		System.out.println("Noktanýnýz yeni koordinatlarý: "+"("+x1+","+y1+")");
 	}
 	
+	public void printInfo() {
+		System.out.println("\nPoint Info");
+		System.out.println("X: " + x);
+		System.out.println("Y: " + y);
+	}
 	
 }
