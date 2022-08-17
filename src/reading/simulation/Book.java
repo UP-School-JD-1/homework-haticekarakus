@@ -7,14 +7,25 @@ public class Book {
 	int currentPage;
 	boolean isHardCover;
 	Author author;
+	BookType bookType;
 	
-	Book(String title, String type, int page, int currentPage, boolean isHardCover, Author author){
+	public BookType getBookType() {
+		System.out.println(bookType);
+		return bookType;
+	}
+
+	public void setBookType(BookType bookType) {
+		this.bookType = bookType;
+	}
+
+	Book(String title, String type, int page, int currentPage, boolean isHardCover, Author author,BookType bookType){
 		this.title=title;
 		this.type=type;
 		this.page=page;
 		this.currentPage=currentPage;
 		this.isHardCover=isHardCover;
 		this.author=author;
+		this.bookType=bookType;
 	}
 	
 	public String getTitle() {
