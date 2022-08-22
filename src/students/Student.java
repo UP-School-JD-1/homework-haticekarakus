@@ -2,7 +2,7 @@ package students;
 
 import java.util.Date;
 
-public class Student {
+abstract class Student {
 	private int no;
 	private String name;
 	private int year;
@@ -57,13 +57,9 @@ public class Student {
 		this.major = major;
 	}
 
-	public void study() {
-		System.out.println("Ogrenci calisiyor.");
-	}
+	abstract void study();
 
-	public void register() {
-		System.out.println("Kayit olundu.");
-	}
+	abstract void register();
 
 	@Override
 	public String toString() {

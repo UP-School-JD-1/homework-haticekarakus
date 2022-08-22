@@ -51,11 +51,9 @@ public class RegistrationOffice {
 		case 4:
 			student= new MasterStudent(2220, "Esin", 2000, new Date(1980,11,3), "Engineer", "Sila Kara");
 			break;
-		case 5:
+		default:
 			student=new PhdStudent(345, "Derin", 1999, new Date(1975,11,6), "Engineer", "Burcu Cicek",true);
 			break;
-		default:
-			student=new Student(567, "Ege", 1990, new Date(1968,11,6), "Psychology");
 		}
 		
 		return student;
