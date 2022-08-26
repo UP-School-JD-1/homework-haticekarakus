@@ -2,7 +2,7 @@ package students;
 
 import java.util.Date;
 
-public class UndergraduateStudent extends Student {
+public class UndergraduateStudent extends AbstractStudent {
 	private String minor;
 
 	public UndergraduateStudent(int no, String name, int year, Date dob, String major, String minor) {
@@ -18,12 +18,10 @@ public class UndergraduateStudent extends Student {
 		this.minor = minor;
 	}
 
-	@Override
 	public void study() {
 		System.out.println("Undergraduate student is studying.");
 	}
 
-	@Override
 	public void register() {
 		System.out.println("Undergraduate student is registering.");
 	}

@@ -2,7 +2,7 @@ package students;
 
 import java.util.Date;
 
-public class GraduateStudent extends Student {
+public class GraduateStudent extends AbstractStudent {
 	private String advisor;
 	private String thesis;
 
@@ -26,24 +26,21 @@ public class GraduateStudent extends Student {
 	public void setThesis(String thesis) {
 		this.thesis = thesis;
 	}
-	
+
 	public void writeThesis() {
 		System.out.println("Graduate student is writing thesis.");
 	}
-	
+
 	public void meetWithAdvisor() {
-		System.out.println("Graduate student meet his advisor:  " +getAdvisor());
+		System.out.println("Graduate student meet his advisor:  " + getAdvisor());
 	}
 
-	@Override
 	public void study() {
 		System.out.println("Graduate student is still studying.");
 	}
 
-	@Override
 	public void register() {
 		System.out.println("Graduate student is registering life.");
 	}
 
-	
 }

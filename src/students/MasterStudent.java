@@ -19,12 +19,10 @@ public class MasterStudent extends GraduateStudent{
 		System.out.println("Master student meet his advisor:  " +getAdvisor());
 	}
 
-	@Override
 	public void study() {
 		System.out.println("Master student is studying");
 	}
 
-	@Override
 	public void register() {
 		System.out.println("Master student is registering");
 	}
